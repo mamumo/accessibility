@@ -1,0 +1,117 @@
+import url(https://fonts.googleapis.com/css?family=Dosis);
+
+/*<style>
+@import 'https://fonts.googleapis.com/css?family=Dosis';
+</style>*/
+
+/* Global */
+
+html, body {
+  height: 100%;
+  font-family: Helvetica;
+}
+
+body {
+  background color:grey;
+  background-size: cover;
+  color: green;
+  font-size: 18px;
+}
+
+/* Header */
+
+header {
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+a#skip, a#skip:hover, a#skip:visited
+{
+  position:absolute;
+  top:-500px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+a#skip:active, a#skip:focus
+{
+  position:static;
+  width:auto;
+  height:auto;
+}
+
+
+.main-title {
+  text-align: center;
+  font-size: 160px;
+  font-weight: 900;
+  font-family: 'Dosis', sans-serif;
+ /* line-height: 120px;*/
+  /*text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.168627);*/
+}
+
+.lead-title {
+  color: yellow;
+}
+
+/* Text */
+h1 {
+  text-align: center;
+}
+.tagline {
+  margin-top:50px;
+  margin-bottom:100px;
+  text-align: center;
+}
+
+/* Layout */
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+form {
+ display: inline-block;
+ text-align: center;
+}
+
+.content {
+  background-color: rgba( 0, 0, 0, 0.168676 );
+  padding: 15px 25px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+}
+
+.content h2 {
+  border-bottom: 1px solid #feff00;
+  text-transform: uppercase;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: 
+}
+
+#quote-list{
+  list-style: none;
+}
+
+.my-button {
+  padding: 8px;
+  height: 40px;
+  background: #FEFF8A;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+blockjoke {
+  cursor:pointer;
+}
+
+blockjoke {
+  display:inline-block;
+}

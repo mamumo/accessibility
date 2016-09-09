@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Frontend JS</title>
+  <script src='app.js'></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <style>
+  @import 'https://fonts.googleapis.com/css?family=Dosis';
+  </style>
+</head>
+<body>
+  <header>
+    <a id="skip" alt="skip to content" href="#maincontent"> Skip to Content</a>
+   <div class="main-title">
+     <div class="lead-title">Have A Giggle</div>
+   </div>
+  </header>
+  <main>
+    <intro>
+      <h1>Welcome!</h1>
+        <p id="tagline" class="tagline">
+          Our aim is to make you laugh. Read some jokes and add some of your own.</p>
+    </intro>
+    <section id="main" class="container content">
+      <aside>
+        <h2>Today's Joke</h2>
+        <blockjoke>
+          Two flies are playing football in a saucer. One says to the other, “Make an effort, we’re playing in the cup tomorrow.”
+          <cite>
+           Tommy Tiernan
+          </cite>
+        </blockjoke>
+      </aside>
+      <div>
+        <h2 id="maincontent">A Few More...</h2>
+        <ul id="joke-list"></ul>
+      </div>
+      <form id="joke-form">
+        <input type="text" id="joke-text-input" size="40" placeholder="Joke" autocomplete="off">
+        <input type="text" id="comedian-text-input" size="40" placeholder="Comedian" autocomplete="off">
+        <input type="submit" id="add-button" value="Add to Jokes">
+      </form>
+    </section>
+  </main>
+</body>
+</html>
