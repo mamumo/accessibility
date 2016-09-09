@@ -5,7 +5,7 @@ var jokes = [
     {joke: "People who process expired passports are so lazy, they’re always cutting corners.",
      comedian:"Joel Dommett"
     },
-    {joke: "If you don’t know what introspection is – you need to take a long, hard look at yourself ",
+    {joke: "If you don’t know what introspection is – you need to take a long, hard look at yourself. ",
      comedian:"Ian Smith"
     }
   ]
@@ -71,12 +71,12 @@ function main(){
   // })
 
   // delete a quote if clicked on
-  jokeList.onclick = function(event) {
-    if(jokeList.lastChild === event.target.parentNode) {
-      resetForm();
-    }
-    jokeList.removeChild(event.target.parentNode);
-  }
+  // jokeList.onclick = function(event) {
+  //   if(jokeList.lastChild === event.target.parentNode) {
+  //     resetForm();
+  //   }
+  //   jokeList.removeChild(event.target.parentNode);
+  // }
 
   jokeInput.oninput = handleKeyChange;
   comedianInput.oninput = handleKeyChange;
