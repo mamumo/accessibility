@@ -16,30 +16,36 @@
    </div>
   </header>
   <main>
-    
       <h1>Welcome!</h1>
         <p id="tagline" class="tagline">
           Our aim is to make you laugh. Read some jokes and add some of your own.</p>
     <!-- </intro> -->
     <section id="main" class="container content">
       <aside>
-        <h2>Today's Joke</h2>
-        <blockjoke>
+        <h2  id="maincontent">Today's Joke</h2>
+        <blockquote>
           Two flies are playing football in a saucer. One says to the other, “Make an effort, we’re playing in the cup tomorrow.”
           <cite>
            Tommy Tiernan
           </cite>
-        </blockjoke>
+        </blockquote>
       </aside>
-      <div>
-        <h2 id="maincontent">A Few More...</h2>
+      </section>
+      <section class="container new content">
+        <aside>
+        <h2>A Few More...</h2>
         <ul id="joke-list"></ul>
-      </div>
+      </aside>
+      </section>
+      <section class= "container new content">
+        <aside>
+          <h2> Add Your Own Here! </h2>
       <form id="joke-form">
         <input type="text" id="joke-text-input" size="40" placeholder="Joke" autocomplete="off">
         <input type="text" id="comedian-text-input" size="40" placeholder="Comedian" autocomplete="off">
         <input type="submit" id="add-button" value="Add to Jokes">
       </form>
+      </aside>
     </section>
   </main>
 </body>

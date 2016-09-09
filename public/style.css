@@ -12,9 +12,9 @@ html, body {
 }
 
 body {
-  background color:grey;
+  background-color:#77AAAD;;
   background-size: cover;
-  color: green;
+  color: yellow;
   font-size: 18px;
 }
 
@@ -79,7 +79,7 @@ form {
 }
 
 .content {
-  background-color: rgba( 0, 0, 0, 0.168676 );
+  background-color: grey;
   padding: 15px 25px;
   margin-bottom: 100px;
   border-radius: 10px;
@@ -88,6 +88,13 @@ form {
 .content h2 {
   border-bottom: 1px solid #feff00;
   text-transform: uppercase;
+}
+
+.new content {
+  background-color: grey;
+  padding: 15px 25px;
+  margin-bottom: 100px;
+  border-radius: 10px;
 }
 
 hr {
@@ -108,10 +115,10 @@ hr {
   font-size: 20px;
 }
 
-blockjoke {
+blockquote {
   cursor:pointer;
 }
 
-blockjoke {
+blockquote {
   display:inline-block;
 }

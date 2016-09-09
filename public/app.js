@@ -28,7 +28,7 @@ function main(){
 
   function createJoke(jokeText, comedianText) {
     var container = document.createElement("li");
-    var joke = document.createElement("blockjoke");
+    var joke = document.createElement("blockquote");
     joke.innerHTML = jokeText + " ";
     var comedian = document.createElement("cite");
     comedian.innerHTML = comedianText;
@@ -60,23 +60,7 @@ function main(){
     el.childNodes[0].innerHTML = newJoke + " <cite>" + newComedian + "</cite>";
   }
 
-  // savedQuotes = JSON.parse( localStorage.getItem('quote-list')) || [];
-  // console.log('on main got all quotes', savedQuotes);
 
-  // savedQuotes.forEach(function(quoteText, authorText){
-  //   var li = document.createElement('li');
-  //   li.innerText = quoteText + " " + authorText;
-  //   var ul = document.getElementById('quote-list');
-  //   ul.appendChild(li);
-  // })
-
-  // delete a quote if clicked on
-  // jokeList.onclick = function(event) {
-  //   if(jokeList.lastChild === event.target.parentNode) {
-  //     resetForm();
-  //   }
-  //   jokeList.removeChild(event.target.parentNode);
-  // }
 
   jokeInput.oninput = handleKeyChange;
   comedianInput.oninput = handleKeyChange;
