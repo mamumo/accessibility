@@ -1,7 +1,10 @@
-<!DOCTYPE html>
-<html>
+<!-- <!DOCTYPE html>
+<html> -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>Have A Giggle</title>
+  <title>Have A Giggle - A Daily Joke</title>
   <script src='app.js'></script>
   <link rel="stylesheet" type="text/css" href="style.css" />
   <style>
@@ -9,44 +12,66 @@
   </style>
 </head>
 <body>
+
+<a id="skip" alt="skip to main content" href="#maincontent" role="link" tabindex="1"> Skip to Main Content</a>
+
+<section id ="error-box" role="alert" aria-live="assertive">
+  <ul id="error-list" role="list"></ul>
+</section>
+
   <header>
-    <a id="skip" alt="skip to content" href="#maincontent"> Skip to Content</a>
+
    <div class="main-title">
      <div class="lead-title">Have A Giggle</div>
    </div>
+
   </header>
+
+
   <main>
+
       <h1>Welcome!</h1>
         <p id="tagline" class="tagline">
           Our aim is to make you laugh. Read some jokes and add some of your own.</p>
+
+     
+
     <!-- </intro> -->
     <section id="main" class="container content">
+
       <aside>
-        <h2  id="maincontent">Today's Joke</h2>
+
+        <h2 id="maincontent">Today's Joke</h2>
         <blockquote>
-          Two flies are playing football in a saucer. One says to the other, “Make an effort, we’re playing in the cup tomorrow.”
+          Two flies are playing football in a saucer. One says to the other, "Make an effort, we’re playing in the cup tomorrow."
           <cite>
            Tommy Tiernan
           </cite>
         </blockquote>
+      
       </aside>
-      </section>
-      <section class="container new content">
-        <aside>
+
+    </section>
+
+    <section class="container new content">
+      <aside>
         <h2>A Few More...</h2>
         <ul id="joke-list"></ul>
       </aside>
-      </section>
-      <section class= "container new content">
-        <aside>
-          <h2> Add Your Own Here! </h2>
-      <form id="joke-form">
-        <input type="text" id="joke-text-input" size="40" placeholder="Joke" autocomplete="off">
-        <input type="text" id="comedian-text-input" size="40" placeholder="Comedian" autocomplete="off">
-        <input type="submit" id="add-button" value="Add to Jokes">
-      </form>
+    </section>
+
+    <section class= "container new content">
+      <aside>
+          <h2 tabindex="0"> Add Your Own Here! </h2>
+            <form id="joke-form" method="get">
+              <input type="text" id="joke-text-input" name="joke-text-input" size="40" placeholder="Joke" autocomplete="off" aria-required="true">
+
+              <input type="text" id="comedian-text-input" name="comedian-text-input" size="40" placeholder="Comedian" autocomplete="off" aria-required="true">
+              <input type="submit" id="add-button" value="Add to Jokes">
+            </form>
       </aside>
     </section>
+
   </main>
 </body>
 </html>

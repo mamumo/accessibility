@@ -122,3 +122,7 @@ blockquote {
 blockquote {
   display:inline-block;
 }
+
+#error-list {
+    list-style: none;  
+}
