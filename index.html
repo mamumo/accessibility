@@ -1,74 +1,81 @@
 <!-- <!DOCTYPE html>
-<html> -->
+  <html> -->
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <title>Have A Giggle - A Daily Joke</title>
-  <script src='app.js'></script>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <style>
-  @import 'https://fonts.googleapis.com/css?family=Dosis';
-  </style>
-</head>
-<body>
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
 
-<a id="skip" alt="skip to main content" href="#maincontent" role="link" tabindex="1"> Skip to Main Content</a>
+  <head>
+    <title>Have A Giggle - A Daily Joke</title>
+    <script src='app.js'></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      @import 'https://fonts.googleapis.com/css?family=Dosis';
+    </style>
+  </head>
 
-<section id ="error-box" role="alert" aria-live="assertive">
-  <ul id="error-list" role="list"></ul>
-</section>
+  <body>
 
-  <header>
-
-   <div class="main-title">
-     <div class="lead-title">Have A Giggle</div>
-   </div>
-
-  </header>
+    <nav>
+      <a id="skip" alt="skip to main content" href="#maincontent" role="link" tabindex="1"> Skip to Main Content</a>
+    </nav>
 
 
-  <main>
-
-      <h1>Welcome!</h1>
-        <p id="tagline" class="tagline">
-          Our aim is to make you laugh. Read some jokes and add some of your own.</p>
-
-     
-
-    <!-- </intro> -->
-    <section id="main" class="container content">
-
-      <aside>
-
-        <h2 id="maincontent">Today's Joke</h2>
-        <blockquote>
-          Two flies are playing football in a saucer. One says to the other, "Make an effort, we’re playing in the cup tomorrow."
-          <cite>
-           Tommy Tiernan
-          </cite>
-        </blockquote>
-      
-      </aside>
-
+    <section id ="error-box" role="alert" aria-live="assertive">
+      <ul id="error-list" role="list"></ul>
     </section>
 
-    <section class="container new content">
+    <header>
+
+     <div class="main-title">
+       <div class="lead-title">Have A Giggle</div>
+     </div>
+
+   </header>
+
+
+   <main>
+
+    <h1>Welcome!</h1>
+    <p id="tagline" class="tagline">
+      Our aim is to make you laugh. Read some jokes and add some of your own.</p>
+
+
+
+      <!-- </intro> -->
+      <section id="main" class="container content">
+
+        <aside>
+
+          <h2 id="maincontent">Today's Joke</h2>
+          <blockquote>
+            Two flies are playing football in a saucer. One says to the other, "Make an effort, we’re playing in the cup tomorrow."
+            <cite>
+             Tommy Tiernan
+           </cite>
+         </blockquote>
+
+       </aside>
+
+     </section>
+
+     <section class="container new content">
       <aside>
         <h2>A Few More...</h2>
-        <ul id="joke-list"></ul>
+        <ul id="joke-list" aria-live="polite"></ul>
       </aside>
     </section>
 
     <section class= "container new content">
       <aside>
-          <h2 tabindex="0"> Add Your Own Here! </h2>
-            <form id="joke-form" method="get">
-              <input type="text" id="joke-text-input" name="joke-text-input" size="40" placeholder="Joke" autocomplete="off" aria-required="true">
+        <h2 tabindex="0"> Add Your Own Here! </h2>
+        <form id="joke-form" method="get">
 
-              <input type="text" id="comedian-text-input" name="comedian-text-input" size="40" placeholder="Comedian" autocomplete="off" aria-required="true">
-              <input type="submit" id="add-button" value="Add to Jokes">
-            </form>
+          <input type="text" id="joke-text-input" name="joke-text-input" size="40" placeholder="Joke" autocomplete="off" aria-required="true">
+
+          <input type="text" id="comedian-text-input" name="comedian-text-input" size="40" placeholder="Comedian" autocomplete="off" aria-required="true">
+          <input type="submit" id="add-button" value="Add to Jokes">
+
+        </form>
       </aside>
     </section>
 

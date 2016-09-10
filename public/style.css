@@ -37,6 +37,7 @@ a#skip, a#skip:hover, a#skip:visited
 
 a#skip:active, a#skip:focus
 {
+  overflow: visible;
   position:static;
   width:auto;
   height:auto;
@@ -103,9 +104,9 @@ hr {
   background-image: 
 }
 
-#quote-list{
+/*#quote-list{
   list-style: none;
-}
+}*/
 
 .my-button {
   padding: 8px;
