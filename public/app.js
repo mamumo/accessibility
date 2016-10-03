@@ -75,7 +75,7 @@ function main(){
     var errorHeaderText = document.createTextNode("Form has validation errors");
     errorHeader.appendChild(errorHeaderText);
     errorHeader.setAttribute("id", "error-header");
-    errorHeader.setAttribute("tabindex", "1");
+    errorHeader.setAttribute("tabindex", "0");
     errorHeader.setAttribute("role", "heading");
     errorHeader.setAttribute("aria-level", "1");
     errorsContainer.insertBefore(errorHeader, errorsContainer.firstChild);
